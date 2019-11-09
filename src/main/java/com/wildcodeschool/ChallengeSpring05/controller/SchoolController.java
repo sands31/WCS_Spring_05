@@ -21,8 +21,8 @@ import com.wildcodeschool.ChallengeSpring05.model.School;
 @ResponseBody
 public class SchoolController {
 	private final static String DB_URL = "jdbc:mysql://localhost:3306/wild_db_quest?serverTimezone=GMT";
-    private final static String DB_USER = "root";
-    private final static String DB_PASSWORD = "YourPassword";
+    private final static String DB_USER = "h4rryp0tt3r";
+    private final static String DB_PASSWORD = "Horcrux4life!";
     
     @GetMapping("/api/schools")
     public List<School> getSchools(@RequestParam(required=false, defaultValue = "%") String country) {
@@ -44,6 +44,7 @@ public class SchoolController {
             	    String name = resulSet.getString("name");
             		int capacity = resulSet.getInt("capacity");
             		String state = resulSet.getString("country");
+            		
             	    schools.add(new School(id, name, capacity, state));
             	}
 

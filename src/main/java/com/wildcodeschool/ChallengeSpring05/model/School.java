@@ -1,6 +1,7 @@
 package com.wildcodeschool.ChallengeSpring05.model;
 
 public class School {
+	
 	private int id;
 	private String name;
 	private int capacity;
